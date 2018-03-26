@@ -1,6 +1,5 @@
 node_modules
 dist
 publish
-lib
 tmp
 npm-debug.log
