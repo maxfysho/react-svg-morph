@@ -72,6 +72,8 @@ export function getAllChildren(node) {
     }
     let len = node.children.length;
     for ( ; i < len; i++) {
+        if (! node.children[i])
+          continue;
         let el = node.children[i];
         els.push(el);
         if (el.children && el.children.filter(Boolean).length > 0) {
